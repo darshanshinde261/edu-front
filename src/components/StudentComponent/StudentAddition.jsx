@@ -41,7 +41,7 @@ const StudentAddition = () => {
 
   const checkStatus = () => {
     getStudentStatusByUsername().then(response => {
-      if (response.data == true || response.data == false) {
+      if (response.data === true || response.data === false) {
         alert("Student is already registered...");
         navigate("/StudentMenu");
       }
